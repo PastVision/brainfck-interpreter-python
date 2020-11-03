@@ -40,10 +40,8 @@ class brainF:
             quit()
 
     def loop(self, bfcode):
-        while True:
+        while self.register[self.pointer] != 0:
             self.execute(bfcode)
-            if self.register[self.pointer] == 0:
-                break
         return
 
     def execute(self, bfcode):
