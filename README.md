@@ -1,4 +1,4 @@
-# brainfck-interpreter-python
+# brainfuck-interpreter-python
 A brainfuck interpreter written in python3.
 
 # Requirements
