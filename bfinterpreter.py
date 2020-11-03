@@ -69,9 +69,14 @@ class brainF:
 
 
 def main():
-    with open(sys.argv[1],'r') as f:
+    if len(sys.argv)==2:
+        with open(sys.argv[1],'r') as f:
             brainF(f.read())
-            print('')
+    elif len(sys.argv)>2:
+        print('Invalid syntax!\nUsage: python bfinterpreter.py <file-containing-brainfuck-code>')
+    else:
+        brainF(input('Enter a BrainFuck code: '))
+    print('')
 
 
 if __name__=='__main__':
